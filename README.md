@@ -30,14 +30,10 @@ o Choose the best model amongst the 4 types of algorithms.
 
  You are asked to do what-if analysis had your algorithm used in various scenarios:
 o Financial crisis (https://www.stlouisfed.org/financial-crisis/full-timeline )
- Run your algorithm for 4 rolling quarters and report your findings and discuss it in
-your report. (i.e Use Q12007, Q22007, Q32007, Q42007 for training and predict for
-Q22007,Q32007,Q42007,Q12008)
- Run your algorithm 2 years later (i.e, 2009 for all 4 quarters)
-o Economic boom (1999, 2013) (https://www.thebalance.com/stock-market-returns-by-year-
-2388543 )
- Discuss your design and results in a report. Would you recommend using this model
-for the next quarter? Justify
+ Run your algorithm for 4 rolling quarters and report your findings and discuss it in your report. (i.e Use Q12007, Q22007, Q32007, Q42007 for training and predict for Q22007,Q32007,Q42007,Q12008)
+ Run your algorithm 2 years later (i.e, 2009 for all 4 quarters) 
+o Economic boom (1999, 2013) (https://www.thebalance.com/stock-market-returns-by-year-2388543 )
+ Discuss your design and results in a report. Would you recommend using this model for the next quarter? Justify
 
 # Classification 
  Write a new jupyter notebook that given input (For example Q12005),
@@ -47,12 +43,9 @@ o Validates against Q22005 data and selects the best Classification model
 o Computes ROC curve and Confusion matrices for training and testing datasets
 o Repeat this using Random Forest, Neural Network models and SVN algorithms.
 o Choose the best model amongst the 4 types of algorithms.
- Parameterize the input (example it should take Q12005) and modify the code so that it outputs the
-5 parameters listed in the matrix below.
- Write another script that calls the above classification script from Q11999-Q42015 and computes
-the following matrix.
- Note that each invocation of is independent. There is scope to parallelize it. Parallelize this so that
-you can run two or more models concurrently (task parallel). Review R and Python packages that
+ Parameterize the input (example it should take Q12005) and modify the code so that it outputs the 5 parameters listed in the matrix below.
+ Write another script that calls the above classification script from Q11999-Q42015 and computes the following matrix.
+ Note that each invocation of is independent. There is scope to parallelize it. Parallelize this so that you can run two or more models concurrently (task parallel). Review R and Python packages that
 can be used to parallelize it to generate the below matrix as a dataframe and export it to a csv file.
 
 
