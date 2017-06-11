@@ -1,0 +1,27 @@
+##Steps to run docker image
+
+docker pull ankitbhayani/adsmidtermv3
+
+
+
+docker run  -e USERNAME="bhayani.a@husky.neu.edu" -e PASSWD="MNl2?DrJ" -e STARTYEAR=2005 -e  ENDYEAR=2005 ankitbhayani/adsmidtermv3 /src/PART1-driver.sh
+
+
+
+docker commit <containerid> <imgename>
+
+
+
+docker run -p 8888:8888 <imgename> /bin/bash -c 'jupyter notebook --no-browser --ip=*'
+
+
+
+docker run  -e USERNAME="" -e PASSWD="" -e TRAINQUARTER=Q42015 -e  TESTQUARTER=Q12016 ankitbhayani/adsmidtermv3 /src/PART2-driver.sh
+
+
+
+docker commit <containerid> <imgename>
+
+
+
+docker run -p 8888:8888 <imgename> /bin/bash -c 'jupyter notebook --no-browser --ip=*'
